@@ -1,2 +1,1 @@
-# yumichay-JSFE2022Q1
-Private repository for @yumichay
+Link: https://yumichay.github.io/online-store/
