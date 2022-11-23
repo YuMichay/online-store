@@ -1,0 +1,327 @@
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/view/cards.css ***!
+  \*********************************************************************************/
+.content__cards {
+  display: flex;
+  flex-direction: column;
+  color: #4f3100;
+  padding-left: 2rem;
+}
+
+@media (max-width: 1023.99px) {
+  .content__cards {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .content__cards {
+    padding-left: 0.313rem;
+  }
+}
+
+.content__cards_heading {
+  font-size: 1.25em;
+}
+
+.content__cards_wrapper-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.625rem;
+  border-bottom: 0.625rem solid #FDEED9;
+  padding: 0.625rem;
+}
+
+.content_cards_form {
+  padding: 0.313rem;
+  margin: 0.313rem;
+}
+
+.content__cards_wrapper-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  animation: appearing 0.3s;
+}
+
+@media (max-width: 1399.99px) {
+
+  .content__cards_wrapper-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1023.99px) {
+
+  .content__cards_wrapper-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+.content__cards_list {
+  color: #4f3100;
+  border: 0.068rem solid #4f3100;
+  border-radius: 0.313rem;
+}
+
+.content__cards_image {
+  width: 8.5rem;
+  height: 7.5rem;
+  align-self: center;
+}
+
+.content__cards_wrapper-card {
+  cursor: pointer;
+  width: 15rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.313rem solid #FFFFFF;
+  transition: all 0.3s;
+}
+
+.content__cards_wrapper-card:hover, .added {
+  border-bottom: 0.313rem solid #ffe6c3;
+}
+
+.content__cards_wrapper-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 2rem);
+}
+
+.text:nth-child(2n) {
+  text-align: end;
+}
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/view/aside.css ***!
+  \*********************************************************************************/
+.content__filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.625rem;
+  border-right: 0.625rem solid #FDEED9;
+  color: #4f3100;
+}
+
+.content__filters_form {
+  padding: 1rem 0;
+}
+
+.content__filters_form::placeholder {
+  color: #4f3100;
+}
+
+.content__filters_form-input {
+  font-size: 1rem;
+  padding: 0.625rem 0.313rem;
+  border: 0.068rem solid #4f3100;
+  border-radius: 0.313rem;
+  background-color: #FDEED9;
+}
+
+.content__filters_wrapper-categories {
+  padding-bottom: 0.625rem;
+}
+
+.content__filters_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.313rem;
+}
+
+.content__filters_heading {
+  font-weight: 500;
+  font-size: 1.5em;
+  padding-bottom: 0.625rem;
+}
+
+.content__filters_text {
+  font-weight: 200;
+  font-size: 0.75em;
+}
+
+.content__filters_category {
+  cursor: pointer;
+  font-size: 1.25em;
+  transition: all 0.3s;
+}
+
+.content__filters_manufacturer,
+.content__filters_color,
+.content__filters_size,
+.content__filters_popular {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.content__filters_category:hover,
+.content__filters_manufacturer:hover,
+.content__filters_color:hover,
+.content__filters_size:hover,
+.content__filters_popular:hover {
+  text-shadow: -0.063rem 0.063rem 0.125rem rgb(79, 49, 0);
+}
+
+.checked {
+  text-shadow: -0.063rem 0.063rem 0.125rem rgb(79, 49, 0);
+}
+
+.content__filters_wrapper-filters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+}
+
+.content__filters_button {
+  cursor: pointer;
+  padding: 0.625rem 1.25rem;
+  margin-right: 2rem;
+  align-self: flex-end;
+  color: #4f3100;
+  background-color: #FDEED9;
+  border: none;
+  border-radius: 0.313rem;
+  transition: all 0.3s;
+}
+
+.content__filters_button:hover {
+  box-shadow: 0 0 0.313rem 0 rgb(79, 49, 0);
+}
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app.css ***!
+  \***************************************************************/
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content__header {
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  background-color: #FDEED9;
+  color: #f9cd90;
+  text-shadow: -0.125rem 0.125rem 0.313rem rgb(79, 49, 0);
+}
+
+.content__header_heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content__header_text {
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  text-shadow: -0.063rem 0.063rem 0.125rem rgb(79, 49, 0);
+}
+
+.content__header_cart {
+  padding-right: 2rem;
+  position: relative;
+}
+
+.content__header_image {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  filter: sepia(1) invert(20%);
+}
+
+.content__header_counter {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+
+.content__main,
+.content__footer {
+  padding: 0.625rem 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}
+
+.content__main {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  column-gap: 2rem;
+}
+
+@media (max-width: 1023.99px) {
+
+  .content__main {
+    grid-template-columns: 35% 60%;
+    column-gap: 1rem;
+  }
+
+}
+
+.content__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FDEED9;
+}
+
+.footer__content_rs-link {
+  display: flex;
+  flex-direction: row;
+  gap: 0.313rem;
+}
+
+.footer__content_logo {
+  width: 1.5rem;
+}
+
+.footer__content_link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #4f3100;
+}
+
+.footer__content_link:hover {
+  text-shadow: -0.063rem 0.063rem 0.125rem rgb(79, 49, 0);
+}
